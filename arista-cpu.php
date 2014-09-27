@@ -8,7 +8,6 @@ if (!isset($_SERVER["argv"][0]) || isset($_SERVER['REQUEST_METHOD'])  || isset($
 if (defined('STDIN')) {
   $host = $argv[1];
   $community = $argv[2];
-  $job = $argv[3];
   //sessors table oid
 
   $oid = 'HOST-RESOURCES-MIB::hrProcessorLoad';
