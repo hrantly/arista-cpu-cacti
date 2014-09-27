@@ -11,7 +11,7 @@ if (defined('STDIN')) {
   $job = $argv[3];
   //sessors table oid
 
-  $oid = 'HOST-RESOURCES-MIB::hrProcessorTable';
+  $oid = 'HOST-RESOURCES-MIB::hrProcessorLoad';
 
   $ar = new SNMP(SNMP::VERSION_2C, $host, $community);
   $res1 = $ar->walk($oid, true);
